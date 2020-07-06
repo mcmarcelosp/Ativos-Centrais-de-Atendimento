@@ -1,0 +1,1183 @@
+Sub TEMPLATE_DIAS_UTEIS()
+    
+    'tempoinicial = Timer
+    
+    Application.ScreenUpdating = False
+
+    Application.DisplayAlerts = False
+
+    
+      
+      
+    '=========================== ATENTO SANTO ANDRÉ - OK=========================
+    
+                    
+             
+    If Sheets("ATIVOS - CENTRAIS").Range("G7").Cells = 1 Then
+       
+    Sheets("DIAS ÚTEIS").Cells(11, 1).Value = ChrW("&h2705") & " *ATENTO SANTO ANDRÉ* - OK"
+    Sheets("DIAS ÚTEIS").Cells(11, 6).Value = ChrW("&h2705") & " *ATENTO SANTO ANDRÉ* - OK"
+        
+        With Sheets("DIAS ÚTEIS").Range("A11, F11").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A11, F11").Characters(Start:=3, Length:=26).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+              
+        
+        '------------------ATENTO SANTO ANDRÉ -"Incidente"-----------------
+    
+    
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G7").Cells = 2 Then
+       
+    Sheets("DIAS ÚTEIS").Cells(11, 1).Value = ChrW("&h26A0") & " *ATENTO SANTO ANDRÉ* - " & Worksheets("ATIVOS - CENTRAIS").Range("G10")
+    Sheets("DIAS ÚTEIS").Cells(11, 6).Value = ChrW("&h26A0") & " *ATENTO SANTO ANDRÉ* - " & Worksheets("ATIVOS - CENTRAIS").Range("G10")
+      
+    
+       With Sheets("DIAS ÚTEIS").Range("A11, F11").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+       With Sheets("DIAS ÚTEIS").Range("A11, F11").Characters(Start:=2, Length:=60).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+            
+            
+    '------------------ATENTO SANTO ANDRÉ - Validação"-----------------
+    
+    
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G7").Cells = 3 Then
+     
+    Sheets("DIAS ÚTEIS").Cells(11, 1).Value = ChrW("&h23f3") & "  *ATENTO SANTO ANDRÉ - Em Validação*"
+    Sheets("DIAS ÚTEIS").Cells(11, 6).Value = ChrW("&h23f3") & "  *ATENTO SANTO ANDRÉ - Em Validação*"
+    
+        With Sheets("DIAS ÚTEIS").Range("A11, F11").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A11, F11").Characters(Start:=3, Length:=35).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+
+    End If
+   
+   
+   '==================== ATENTO GUARULHOS - "OK" ====================
+
+           
+    If Sheets("ATIVOS - CENTRAIS").Range("G16").Cells = 1 Then
+ 
+    
+    Sheets("DIAS ÚTEIS").Cells(13, 1).Value = ChrW("&h2705") & " *ATENTO GUARULHOS* - OK"
+    Sheets("DIAS ÚTEIS").Cells(12, 6).Value = ChrW("&h2705") & " *ATENTO GUARULHOS* - OK"
+    
+        With Sheets("DIAS ÚTEIS").Range("A13, F12").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A13, F12").Characters(Start:=2, Length:=26).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+        
+        
+        '------------------ATENTO GUARULHOS - FORMATAÇÃO "Incidente"-----------------
+        
+            
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G16").Cells = 2 Then
+    
+        
+    Sheets("DIAS ÚTEIS").Cells(13, 1).Value = ChrW("&h26A0") & " *ATENTO GUARULHOS* - " & Worksheets("ATIVOS - CENTRAIS").Range("G19")
+    Sheets("DIAS ÚTEIS").Cells(12, 6).Value = ChrW("&h26A0") & " *ATENTO GUARULHOS* - " & Worksheets("ATIVOS - CENTRAIS").Range("G19")
+    
+       With Sheets("DIAS ÚTEIS").Range("A13, F12").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+       With Sheets("DIAS ÚTEIS").Range("A13, F12").Characters(Start:=2, Length:=60).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+
+    
+        
+     '------------------ATENTO GUARULHOS - FORMATAÇÃO "Em validação"-----------------
+     
+        
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G16").Cells = 3 Then
+       
+    Sheets("DIAS ÚTEIS").Cells(13, 1).Value = ChrW("&h23f3") & "  *ATENTO GUARULHOS - Em Validação*"
+    Sheets("DIAS ÚTEIS").Cells(12, 6).Value = ChrW("&h23f3") & "  *ATENTO GUARULHOS - Em Validação*"
+    
+    
+        With Sheets("DIAS ÚTEIS").Range("A13, F12").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A13, F12").Characters(Start:=3, Length:=35).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+
+    End If
+
+    
+    
+    '==================== ATENTO NOVA SÃO PAULO - "OK"====================
+   
+        
+    If Sheets("ATIVOS - CENTRAIS").Range("G25").Cells = 1 Then
+    
+       
+    Sheets("DIAS ÚTEIS").Cells(15, 1).Value = ChrW("&h2705") & " *ATENTO NOVA SÃO PAULO* - OK"
+    Sheets("DIAS ÚTEIS").Cells(13, 6).Value = ChrW("&h2705") & " *ATENTO NOVA SÃO PAULO* - OK"
+    
+        With Sheets("DIAS ÚTEIS").Range("A15, F13").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A15, F13").Characters(Start:=2, Length:=33).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+            
+   
+       
+       '------------------ATENTO NOVA SÃO PAULO - "Incidente"-----------------
+       
+            
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G25").Cells = 2 Then
+    
+      
+    Sheets("DIAS ÚTEIS").Cells(15, 1).Value = ChrW("&h26A0") & " *ATENTO NOVA SÃO PAULO* - " & Worksheets("ATIVOS - CENTRAIS").Range("G28")
+    Sheets("DIAS ÚTEIS").Cells(13, 6).Value = ChrW("&h26A0") & " *ATENTO NOVA SÃO PAULO* - " & Worksheets("ATIVOS - CENTRAIS").Range("G28")
+    
+       With Sheets("DIAS ÚTEIS").Range("A15, F13").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+       With Sheets("DIAS ÚTEIS").Range("A15, F13").Characters(Start:=2, Length:=65).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+    
+    '------------------ATENTO NOVA SÃO PAULO - "EM VALIDAÇÃO"-----------------
+    
+        
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G25").Cells = 3 Then
+         
+    Sheets("DIAS ÚTEIS").Cells(15, 1).Value = ChrW("&h23f3") & "  *ATENTO NOVA SÃO PAULO - Em Validação*"
+    Sheets("DIAS ÚTEIS").Cells(13, 6).Value = ChrW("&h23f3") & "  *ATENTO NOVA SÃO PAULO - Em Validação*"
+    
+    
+        With Sheets("DIAS ÚTEIS").Range("A15, F13").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A15, F13").Characters(Start:=3, Length:=44).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+                       
+    End If
+        
+    
+    '==================== ATENTO SANTANA - FORMATAÇÃO "OK" ====================
+    
+          
+    If Sheets("ATIVOS - CENTRAIS").Range("G34").Cells = 1 Then
+    
+     
+    Sheets("DIAS ÚTEIS").Cells(17, 1).Value = ChrW("&h2705") & " *ATENTO SANTANA STELO* - OK"
+    Sheets("DIAS ÚTEIS").Cells(14, 6).Value = ChrW("&h2705") & " *ATENTO SANTANA STELO* - OK"
+    
+        With Sheets("DIAS ÚTEIS").Range("A17, F14").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A17, F14").Characters(Start:=2, Length:=35).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+                
+                               
+     '==================== ATENTO SANTANA - "INCIDENTES" ====================
+
+         
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G34").Cells = 2 Then
+       
+    Sheets("DIAS ÚTEIS").Cells(17, 1).Value = ChrW("&h26A0") & " *ATENTO SANTANA STELO* - " & Worksheets("ATIVOS - CENTRAIS").Range("G37")
+    Sheets("DIAS ÚTEIS").Cells(14, 6).Value = ChrW("&h26A0") & " *ATENTO SANTANA STELO* - " & Worksheets("ATIVOS - CENTRAIS").Range("G37")
+    
+       With Sheets("DIAS ÚTEIS").Range("A17, F14").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+       With Sheets("DIAS ÚTEIS").Range("A17, F14").Characters(Start:=2, Length:=70).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+    '==================== ATENTO SANTANA - "EM VALIDAÇÃO" ====================
+     
+       
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G34").Cells = 3 Then
+    
+    Sheets("DIAS ÚTEIS").Cells(17, 1).Value = ChrW("&h23f3") & "  *ATENTO SANTANA STELO - Em Validação*"
+    Sheets("DIAS ÚTEIS").Cells(14, 6).Value = ChrW("&h23f3") & "  *ATENTO SANTANA STELO - Em Validação*"
+    
+    
+        With Sheets("DIAS ÚTEIS").Range("A17, F14").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A17, F14").Characters(Start:=3, Length:=50).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+                
+    End If
+    
+        
+    '==================== NEOBPO MOGI - "OK"====================
+   
+            
+    If Sheets("ATIVOS - CENTRAIS").Range("G43").Cells = 1 Then
+    
+       
+    Sheets("DIAS ÚTEIS").Cells(19, 1).Value = ChrW("&h2705") & " *NEOBPO MOGI* - OK"
+    Sheets("DIAS ÚTEIS").Cells(15, 6).Value = ChrW("&h2705") & " *NEOBPO MOGI* - OK"
+    
+        With Sheets("DIAS ÚTEIS").Range("A19, F15").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A19, F15").Characters(Start:=2, Length:=22).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+        
+        
+      '------------------NEOBPO MOGI - "Incidente"-----------------
+      
+            
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G43").Cells = 2 Then
+        
+    Sheets("DIAS ÚTEIS").Cells(19, 1).Value = ChrW("&h26A0") & " *NEOBPO MOGI* - " & Worksheets("ATIVOS - CENTRAIS").Range("G46")
+    Sheets("DIAS ÚTEIS").Cells(15, 6).Value = ChrW("&h26A0") & " *NEOBPO MOGI* - " & Worksheets("ATIVOS - CENTRAIS").Range("G46")
+    
+       With Sheets("DIAS ÚTEIS").Range("A19, F15").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+       With Sheets("DIAS ÚTEIS").Range("A19, F15").Characters(Start:=2, Length:=65).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+    '------------------NEOBPO MOGI - "Validação"-----------------
+    
+           
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G43").Cells = 3 Then
+            
+    Sheets("DIAS ÚTEIS").Cells(19, 1).Value = ChrW("&h23f3") & "  *NEOBPO MOGI - Em Validação*"
+    Sheets("DIAS ÚTEIS").Cells(15, 6).Value = ChrW("&h23f3") & "  *NEOBPO MOGI - Em Validação*"
+    
+    
+        With Sheets("DIAS ÚTEIS").Range("A19, F15").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A19, F15").Characters(Start:=3, Length:=44).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+             
+    End If
+    
+    
+     '==================== NEOBPO JABOATÃO - "OK" ====================
+    
+                     
+    If Sheets("ATIVOS - CENTRAIS").Range("G52").Cells = 1 Then
+       
+    Sheets("DIAS ÚTEIS").Cells(21, 1).Value = ChrW("&h2705") & " *NEOBPO JABOATÃO* - OK"
+    Sheets("DIAS ÚTEIS").Cells(16, 6).Value = ChrW("&h2705") & " *NEOBPO JABOATÃO* - OK"
+    
+    
+        With Sheets("DIAS ÚTEIS").Range("A21, F16").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A21, F16").Characters(Start:=2, Length:=28).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+        
+        
+         '==================== NEOBPO JABOATÃO - "INCIDENTES" ====================
+         
+      
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G52").Cells = 2 Then
+    
+    
+    Sheets("DIAS ÚTEIS").Cells(21, 1).Value = ChrW("&h26A0") & " *NEOBPO JABOATÃO* - " & Worksheets("ATIVOS - CENTRAIS").Range("G55")
+    Sheets("DIAS ÚTEIS").Cells(16, 6).Value = ChrW("&h26A0") & " *NEOBPO JABOATÃO* - " & Worksheets("ATIVOS - CENTRAIS").Range("G55")
+    
+       With Sheets("DIAS ÚTEIS").Range("A21, F16").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+       With Sheets("DIAS ÚTEIS").Range("A21, F16").Characters(Start:=2, Length:=65).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+
+     
+     
+     '==================== NEOBPO JABOATÃO - "EM VALIDAÇÃO" ====================
+      
+    
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G52").Cells = 3 Then
+    
+       
+    Sheets("DIAS ÚTEIS").Cells(21, 1).Value = ChrW("&h23f3") & "  *NEOBPO JABOATÃO - Em Validação*"
+    Sheets("DIAS ÚTEIS").Cells(16, 6).Value = ChrW("&h23f3") & "  *NEOBPO JABOATÃO - Em Validação*"
+    
+    
+        With Sheets("DIAS ÚTEIS").Range("A21, F16").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A21, F16").Characters(Start:=3, Length:=44).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+        
+     End If
+
+    
+    '==================== PLURISMIDIA - "OK"====================
+          
+        
+    If Sheets("ATIVOS - CENTRAIS").Range("G61").Cells = 1 Then
+        
+     Sheets("DIAS ÚTEIS").Cells(23, 1).Value = ChrW("&h2705") & " *PLURISMIDIA* - OK"
+     Sheets("DIAS ÚTEIS").Cells(17, 6).Value = ChrW("&h2705") & " *PLURISMIDIA* - OK"
+    
+    
+        With Sheets("DIAS ÚTEIS").Range("A23, F17").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A23, F17").Characters(Start:=2, Length:=25).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+              
+              
+      '==================== PLURISMIDIA - "INCIDENTES"====================
+         
+    
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G61").Cells = 2 Then
+        
+   Sheets("DIAS ÚTEIS").Cells(23, 1).Value = ChrW("&h26A0") & " *PLURISMIDIA* - " & Worksheets("ATIVOS - CENTRAIS").Range("G65")
+   Sheets("DIAS ÚTEIS").Cells(17, 6).Value = ChrW("&h26A0") & " *PLURISMIDIA* - " & Worksheets("ATIVOS - CENTRAIS").Range("G65")
+   
+        
+       With Sheets("DIAS ÚTEIS").Range("A23, F17").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+       With Sheets("DIAS ÚTEIS").Range("A23, F17").Characters(Start:=2, Length:=65).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+    
+     '==================== PLURISMIDIA - "EM VALIDAÇÃO"====================
+    
+    
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G61").Cells = 3 Then
+       
+    Sheets("DIAS ÚTEIS").Cells(23, 1).Value = ChrW("&h23f3") & "  *PLURISMIDIA - Em Validação*"
+    Sheets("DIAS ÚTEIS").Cells(17, 6).Value = ChrW("&h23f3") & "  *PLURISMIDIA - Em Validação*"
+    
+    
+        With Sheets("DIAS ÚTEIS").Range("A23, F17").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A23, F17").Characters(Start:=3, Length:=48).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+
+      
+       End If
+
+
+     '==================== MINDBE - "OK"====================
+          
+        
+    If Sheets("ATIVOS - CENTRAIS").Range("G72").Cells = 1 Then
+    
+    Sheets("DIAS ÚTEIS").Cells(25, 1).Value = ChrW("&h2705") & " *MINDBE* - OK"
+    Sheets("DIAS ÚTEIS").Cells(18, 6).Value = ChrW("&h2705") & " *MINDBE* - OK"
+    
+    
+        With Sheets("DIAS ÚTEIS").Range("A25, F18").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A25, F18").Characters(Start:=2, Length:=22).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+
+        
+        '==================== MINDBE - FORMATAÇÃO "INCIDENTES"====================
+        
+            
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G72").Cells = 2 Then
+       
+    Sheets("DIAS ÚTEIS").Cells(25, 1).Value = ChrW("&h26A0") & " *MINDBE* - " & Worksheets("ATIVOS - CENTRAIS").Range("G75")
+    Sheets("DIAS ÚTEIS").Cells(18, 6).Value = ChrW("&h26A0") & " *MINDBE* - " & Worksheets("ATIVOS - CENTRAIS").Range("G75")
+    
+       With Sheets("DIAS ÚTEIS").Range("A25, F18").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+       With Sheets("DIAS ÚTEIS").Range("A25, F18").Characters(Start:=2, Length:=65).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+        
+       
+    '==================== MINDBE - "EM VALIDAÇÃO"====================
+    
+        
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G72").Cells = 3 Then
+   
+    Sheets("DIAS ÚTEIS").Cells(25, 1).Value = ChrW("&h23f3") & "  *MINDBE - Em Validação*"
+    Sheets("DIAS ÚTEIS").Cells(18, 6).Value = ChrW("&h23f3") & "  *MINDBE - Em Validação*"
+    
+        With Sheets("DIAS ÚTEIS").Range("A25, F18").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A25, F18").Characters(Start:=3, Length:=44).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+    End If
+    
+     '==================== DXC - FORMATAÇÃO "Ok"====================
+     
+            
+    If Sheets("ATIVOS - CENTRAIS").Range("G81").Cells = 1 Then
+   
+    Sheets("DIAS ÚTEIS").Cells(37, 1).Value = ChrW("&h2705") & " *DXC* - OK"
+    Sheets("DIAS ÚTEIS").Cells(24, 6).Value = ChrW("&h2705") & " *DXC* - OK"
+    
+        With Sheets("DIAS ÚTEIS").Range("A37, F24").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A37, F24").Characters(Start:=2, Length:=25).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+        
+        
+    '------------------DXC - Incidente"-----------------
+        
+             
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G81").Cells = 2 Then
+      
+    Sheets("DIAS ÚTEIS").Cells(37, 1).Value = ChrW("&h26A0") & " *DXC* - " & Worksheets("ATIVOS - CENTRAIS").Range("G84")
+    Sheets("DIAS ÚTEIS").Cells(24, 6).Value = ChrW("&h26A0") & " *DXC* - " & Worksheets("ATIVOS - CENTRAIS").Range("G84")
+    
+       With Sheets("DIAS ÚTEIS").Range("A37, F24").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+       With Sheets("DIAS ÚTEIS").Range("A37, F24").Characters(Start:=2, Length:=65).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+     
+     '------------------DXC -"Em Validação"-----------------
+     
+        
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G81").Cells = 3 Then
+        
+    Sheets("DIAS ÚTEIS").Cells(37, 1).Value = ChrW("&h23f3") & "  *DXC - Em Validação*"
+    Sheets("DIAS ÚTEIS").Cells(24, 6).Value = ChrW("&h23f3") & "  *DXC - Em Validação*"
+    
+    
+        With Sheets("DIAS ÚTEIS").Range("A37, F24").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A37, F24").Characters(Start:=3, Length:=48).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+
+    End If
+
+    
+     '==================== CALLINK -"OK"-====================
+
+             
+    If Sheets("ATIVOS - CENTRAIS").Range("G90").Cells = 1 Then
+        
+    Sheets("DIAS ÚTEIS").Cells(29, 1).Value = ChrW("&h2705") & " *CALLINK* - OK"
+    Sheets("DIAS ÚTEIS").Cells(20, 6).Value = ChrW("&h2705") & " *CALLINK* - OK"
+    
+    
+        With Sheets("DIAS ÚTEIS").Range("A29, F20").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A29, F20").Characters(Start:=2, Length:=22).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+        
+        
+    '------------------CALLINK - "Incidente"-----------------
+    
+            
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G90").Cells = 2 Then
+        
+    Sheets("DIAS ÚTEIS").Cells(29, 1).Value = ChrW("&h26A0") & " *CALLINK* - " & Worksheets("ATIVOS - CENTRAIS").Range("G93")
+    Sheets("DIAS ÚTEIS").Cells(20, 6).Value = ChrW("&h26A0") & " *CALLINK* - " & Worksheets("ATIVOS - CENTRAIS").Range("G93")
+    
+       With Sheets("DIAS ÚTEIS").Range("A29, F20").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+       With Sheets("DIAS ÚTEIS").Range("A29, F20").Characters(Start:=2, Length:=65).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+    '------------------CALLINK -"EM VALIDAÇÃO"-----------------
+        
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G90").Cells = 3 Then
+    
+    Sheets("DIAS ÚTEIS").Cells(29, 1).Value = ChrW("&h23f3") & "  *CALLINK - Em Validação*"
+    Sheets("DIAS ÚTEIS").Cells(20, 6).Value = ChrW("&h23f3") & "  *CALLINK - Em Validação*"
+    
+    
+        With Sheets("DIAS ÚTEIS").Range("A29, F20").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A29, F20").Characters(Start:=3, Length:=44).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+             
+    End If
+    
+    
+    '==================== TELEPERFORMANCE - "Ok" ====================
+    
+          
+    If Sheets("ATIVOS - CENTRAIS").Range("G99").Cells = 1 Then
+        
+    Sheets("DIAS ÚTEIS").Cells(31, 1).Value = ChrW("&h2705") & " *TELEPERFORMANCE* - OK"
+    Sheets("DIAS ÚTEIS").Cells(21, 6).Value = ChrW("&h2705") & " *TELEPERFORMANCE* - OK"
+    
+        With Sheets("DIAS ÚTEIS").Range("A31, F21").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A31, F21").Characters(Start:=2, Length:=28).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+        
+        
+        '==================== TELEPERFORMANCE -"Incidentes" ====================
+        
+              
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G99").Cells = 2 Then
+       
+    Sheets("DIAS ÚTEIS").Cells(31, 1).Value = ChrW("&h26A0") & " *TELEPERFORMANCE* - " & Worksheets("ATIVOS - CENTRAIS").Range("G102")
+    Sheets("DIAS ÚTEIS").Cells(21, 6).Value = ChrW("&h26A0") & " *TELEPERFORMANCE* - " & Worksheets("ATIVOS - CENTRAIS").Range("G102")
+    
+       With Sheets("DIAS ÚTEIS").Range("A31, F21").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+       With Sheets("DIAS ÚTEIS").Range("A31, F21").Characters(Start:=2, Length:=65).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+    
+   '==================== TELEPERFORMANCE -"VALIDAÇÃO" ====================
+    
+        
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G99").Cells = 3 Then
+     
+    Sheets("DIAS ÚTEIS").Cells(31, 1).Value = ChrW("&h23f3") & "  *TELEPERFORMANCE - Em Validação*"
+    Sheets("DIAS ÚTEIS").Cells(21, 6).Value = ChrW("&h23f3") & "  *TELEPERFORMANCE - Em Validação*"
+    
+        With Sheets("DIAS ÚTEIS").Range("A31, F21").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A31, F21").Characters(Start:=3, Length:=48).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+
+   End If
+    
+    '==================== ALMAVIVA - "OK"====================
+    
+            
+    If Sheets("ATIVOS - CENTRAIS").Range("G108").Cells = 1 Then
+        
+    Sheets("DIAS ÚTEIS").Cells(27, 1).Value = ChrW("&h2705") & " *ALMAVIVA* - OK"
+    Sheets("DIAS ÚTEIS").Cells(19, 6).Value = ChrW("&h2705") & " *ALMAVIVA* - OK"
+        
+        With Sheets("DIAS ÚTEIS").Range("A27, F19").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A27, F19").Characters(Start:=2, Length:=18).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+        
+
+        
+     '==================== ALMAVIVA - "INCIDENTES"====================
+        
+               
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G108").Cells = 2 Then
+    
+    Sheets("DIAS ÚTEIS").Cells(27, 1).Value = ChrW("&h26A0") & " *ALMAVIVA* - " & Worksheets("ATIVOS - CENTRAIS").Range("G111")
+    Sheets("DIAS ÚTEIS").Cells(19, 6).Value = ChrW("&h26A0") & " *ALMAVIVA* - " & Worksheets("ATIVOS - CENTRAIS").Range("G111")
+    
+       With Sheets("DIAS ÚTEIS").Range("A27, F19").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+       With Sheets("DIAS ÚTEIS").Range("A27, F19").Characters(Start:=2, Length:=65).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+    
+    '==================== ALMAVIVA - "EM VALIDAÇÃO"====================
+    
+       
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G108").Cells = 3 Then
+     
+    Sheets("DIAS ÚTEIS").Cells(27, 1).Value = ChrW("&h23f3") & "  *ALMAVIVA - Em Validação*"
+    Sheets("DIAS ÚTEIS").Cells(19, 6).Value = ChrW("&h23f3") & "  *ALMAVIVA - Em Validação*"
+    
+    
+        With Sheets("DIAS ÚTEIS").Range("A27, F19").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A27, F19").Characters(Start:=3, Length:=27).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+          
+
+        End If
+    
+     
+     '==================== WHATSAPP CIELO PAY -"OK"====================
+     
+           
+    If Sheets("ATIVOS - CENTRAIS").Range("G117").Cells = 1 Then
+        
+    Sheets("DIAS ÚTEIS").Cells(35, 1).Value = ChrW("&h2705") & " *WHATSAPP CIELO PAY* - OK"
+    Sheets("DIAS ÚTEIS").Cells(23, 6).Value = ChrW("&h2705") & " *WHATSAPP CIELO PAY* - OK"
+    
+        With Sheets("DIAS ÚTEIS").Range("A35, F23").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A35, F23").Characters(Start:=3, Length:=90).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+                           
+        End With
+        
+        
+    '==================== WHATSAPP CIELO PAY -"INCIDENTE"====================
+        
+           
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G117").Cells = 2 Then
+        
+    Sheets("DIAS ÚTEIS").Cells(35, 1).Value = ChrW("&h26A0") & " *WHATSAPP CIELO PAY* - " & Worksheets("ATIVOS - CENTRAIS").Range("G121")
+    Sheets("DIAS ÚTEIS").Cells(23, 6).Value = ChrW("&h26A0") & " *WHATSAPP CIELO PAY* - " & Worksheets("ATIVOS - CENTRAIS").Range("G121")
+    
+        With Sheets("DIAS ÚTEIS").Range("A35, F23").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A35, F23").Characters(Start:=3, Length:=90).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+           
+
+    
+    '==================== WHATSAPP CIELO PAY -"EM VALIDAÇÃO"====================
+    
+       
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G117").Cells = 3 Then
+        
+    Sheets("DIAS ÚTEIS").Cells(35, 1).Value = ChrW("&h23f3") & " *WHATSAPP CIELO PAY - Em Validação*"
+    Sheets("DIAS ÚTEIS").Cells(23, 6).Value = ChrW("&h23f3") & " *WHATSAPP CIELO PAY - Em Validação*"
+    
+    
+        With Sheets("DIAS ÚTEIS").Range("A35, F23").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A35, F23").Characters(Start:=3, Length:=90).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+
+    End If
+    
+    
+    '==================== URA SERVICE DESK -"OK"====================
+    
+            
+    If Sheets("ATIVOS - CENTRAIS").Range("G128").Cells = 1 Then
+       
+    Sheets("DIAS ÚTEIS").Cells(33, 1).Value = ChrW("&h2705") & " *URA NCC SD* - OK"
+    Sheets("DIAS ÚTEIS").Cells(22, 6).Value = ChrW("&h2705") & " *URA NCC SD* - OK"
+    
+        With Sheets("DIAS ÚTEIS").Range("A33, F22").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A33, F22").Characters(Start:=2, Length:=22).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+        
+        
+     '==================== URA SERVICE DESK -"INCIDENTE"====================
+      
+      
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G128").Cells = 2 Then
+        
+    Sheets("DIAS ÚTEIS").Cells(33, 1).Value = ChrW("&h26A0") & " *URA NCC SD* - " & Worksheets("ATIVOS - CENTRAIS").Range("G131")
+    Sheets("DIAS ÚTEIS").Cells(22, 6).Value = ChrW("&h26A0") & " *URA NCC SD* - " & Worksheets("ATIVOS - CENTRAIS").Range("G131")
+    
+       With Sheets("DIAS ÚTEIS").Range("A33, F22").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+       With Sheets("DIAS ÚTEIS").Range("A33, F22").Characters(Start:=2, Length:=65).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+       
+        End If
+    
+      '==================== PARLA -"OK"====================
+            
+    If Sheets("ATIVOS - CENTRAIS").Range("G137").Cells = 1 Then
+      
+    Sheets("DIAS ÚTEIS").Cells(34, 6).Value = ChrW("&h2705") & " *PARLA* - OK"
+    Sheets("DIAS ÚTEIS").Cells(25, 6).Value = ChrW("&h2705") & " *PARLA* - OK"
+    
+        With Sheets("DIAS ÚTEIS").Range("F34, F25").Characters(Start:=1, Length:=2).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("F34, F25").Characters(Start:=2, Length:=44).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+        
+        
+    '==================== PARLA -"INCIDENTE"====================
+        
+            
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G137").Cells = 2 Then
+        
+    Sheets("DIAS ÚTEIS").Cells(34, 6).Value = ChrW("&h26A0") & " *PARLA* - " & Worksheets("ATIVOS - CENTRAIS").Range("G140")
+    Sheets("DIAS ÚTEIS").Cells(25, 6).Value = ChrW("&h26A0") & " *PARLA* - " & Worksheets("ATIVOS - CENTRAIS").Range("G140")
+    
+        With Sheets("DIAS ÚTEIS").Range("F34, F25").Characters(Start:=1, Length:=1).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("F34, F25").Characters(Start:=2, Length:=60).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+       End With
+    
+    
+    '==================== PARLA -"EM VALIDAÇÃO"====================
+    
+        
+    ElseIf Sheets("ATIVOS - CENTRAIS").Range("G137").Cells = 3 Then
+    
+        
+    Sheets("DIAS ÚTEIS").Cells(39, 1).Value = ChrW("&h23f3") & "  *PARLA - Em Validação*"
+    Sheets("DIAS ÚTEIS").Cells(25, 6).Value = ChrW("&h23f3") & "  *PARLA - Em Validação*"
+    
+    
+        With Sheets("DIAS ÚTEIS").Range("A39, F25").Characters(Start:=1, Length:=3).Font
+        
+        .Name = "Segoe UI Emoji"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+    
+        With Sheets("DIAS ÚTEIS").Range("A39, F25").Characters(Start:=4, Length:=44).Font
+  
+        .Name = "Calibri"
+        .FontStyle = "Negrito"
+        .Size = 14
+            
+        End With
+            
+        End If
+        
+               
+        Sheets("DIAS ÚTEIS").Activate
+        
+     
+    Application.DisplayAlerts = True
+
+    Application.ScreenUpdating = True
+    
+    'MsgBox (Timer - tempoinicial)
+    
+        MsgBox "Clique nos Botões correspondentes para copiar e colar no WhatsApp Web!", vbOKOnly, _
+     "Template Gerado com Sucesso!"
+        
+ 
+End Sub
+
